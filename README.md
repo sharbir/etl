@@ -143,7 +143,7 @@ consumption_pipeline(target_table="gold_patient_master")
 ### File Paths
 
 ```python
-# Update in load_raw_file notebook
+# Update in load_raw_file
 load_ccd_data(file_path="/Volumes/<catalog>/<schema>/<volume>/ccd_file.xml")
 load_claims_data(file_path="/Volumes/<catalog>/<schema>/<volume>/claims_file.csv")
 ```
