@@ -1,6 +1,6 @@
 # Healthcare ETL Pipeline
 
-Production-ready ETL pipeline for processing healthcare data (Clinical Care Documents and Claims) on Databricks using PySpark and Delta Lake.
+ETL pipeline for processing healthcare data (Clinical Care Documents and Claims) on Databricks using PySpark and Delta Lake.
 
 ## Overview
 
@@ -81,20 +81,6 @@ Execute the `main_caller` notebook:
 
 ### Table Names
 
-All table names are configurable via function parameters:
-
-```python
-# Bronze layer
-load_ccd_data(table_name="brnz_ccd")
-load_claims_data(table_name="brnz_claims")
-load_rx_data(table_name="brnz_rx")
-
-# Silver layer
-transform_problems_pipeline(target_table="silver_problems")
-extract_medications_from_ccd(target_table="silver_medications")
-
-# Gold layer
-consumption_pipeline(target_table="gold_patient_insights")
-```
+All table names are configurable via User INPUT
 
 **Built with ❤️ on Databricks**
